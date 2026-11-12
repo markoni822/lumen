@@ -1,0 +1,10 @@
+node_modules/
+.vercel/
+screenshots/
+*.log
+.DS_Store
+
+# Pliki binarne odtwarzane z assets-binary.json przez scripts/decode-binary-assets.mjs
+public/__grok/icon-180.png
+public/__grok/install/assets/homescreen/ob-ipad.png
+public/__grok/install/assets/homescreen/ob-phone.png
