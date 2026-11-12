@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0e0d0b;
+  --color-surface: #171512;
+  --color-surface-2: #221f1b;
+  --color-fg: #f4eee6;
+  --color-muted: #a3988b;
+  --color-line: #34302a;
+  --color-brass: #d6a15a;
+  --color-brass-ink: #2a2116;
+  --color-up: #7dcaa0;
+  --color-down: #e08b7a;
+  --font-sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-serif: Fraunces, Georgia, serif;
+  --radius-xl: 1rem;
+}
+
+@layer base {
+  html,
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  input[type="range"] {
+    accent-color: var(--color-brass);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .status-dot {
+    animation: none;
+  }
+}
